@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Sign Up Form</title>
+</head>
+<body>
+  <!-- The method GET will redirect us to the path in the action attribute-->
+  <form action="./submission.html" method="GET">
+
+    <!-- <div> is a way of grouping elements -->
+    <!-- the label "for" attribute matches it to the input with the id of the same value -->
+    <!-- each input will have a name and value as data to be sent -->
+    <div>
+      <label for="name">Name</label>
+      <input id="name" type="text" name="name" required>
+    </div>
+    
+    <!-- A second way of matching a label to an input is like this:  -->
+    <div>
+      <label>Email
+      <input name="email" type="email" required>
+      </label>
+    </div>
+
+    <div>
+      <label for="age">Age</label>
+      <input type="number" min="0" max="100">
+    </div>
+
+    <!-- Name represents the form data that will be sent. Each name will have a corresponding value -->
+    <!-- Below, both radio buttons have the name="gender", but only one value will be submitted -->
+    <div>
+      <label for="female">Female</label>
+      <input id="female" name="gender" type="radio" value="Female">
+    </div>
+    <div>
+      <label for="male">Male</label>
+      <input id="male" name="gender" type="radio" value="Male">
+    </div>
+
+    <div>
+      <label for="language">Which programming language do you like best?</label><br>
+      <select name="language" id="language">
+        <option value="javascript">JavaScript</option>
+        <option value="ruby">Ruby</option>
+        <option value="python">Python</option>
+      </select>
+    </div>
+
+    <!-- 
+      the required attribute will not allow the form 
+      to be submitted if the value is empty
+    -->
+    <div>
+      <label>I agree to the terms and conditions</label>
+      <input type="checkbox" required>
+    </div>
+    <br>
+
+    <button type="reset">Reset</button>
+    <button type="submit">Register</button>
+
+  </form>
+</body>
+</html>

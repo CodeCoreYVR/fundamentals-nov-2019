@@ -8,19 +8,19 @@
 // symbol
 
 // Examples of numbers
-// 5
-// -5
-// 7.13
-// -10.123253463565
-// Infinity
-// -Infinity
-// NaN
+5
+-5
+7.13
+-10.123253463565
+Infinity
+-Infinity
+NaN
 // inifinity is not the same as Infinity, case matters
 
 // Strings
-// "This uses double quotes"
-// 'This uses single quotes'
-// `This uses backticks`
+"This uses double quotes"
+'This uses single quotes'
+`This uses backticks`
 "one" + "two" // "onetwo"
 '4' + 5 // '45'
 
@@ -31,8 +31,8 @@
 "abc"[2] // "c"
 
 // You cannot mutate a string with bracket notation
-// let s = 'bobbi'
-// s[4] = 'y'
+let s = 'bobbi'
+s[4] = 'y'
 s // 'bobbi'
 
 // parse a string to a number

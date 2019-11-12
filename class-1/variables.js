@@ -7,12 +7,12 @@
  * 
  */
 
-// Declare an immutable variable
+// Declare a variable that can't be reassigned/rebinded:
 const myNumber = 2;
 
-// Declare a mutable variable
-let name = "Joe";
-let boolean = true;
+// Declare a variable that can be reassigned:
+var name = "Joe"; // only way to declare before ES6
+let boolean = true; 
 boolean = false;
 
 // Syntax is as follows:

@@ -1,0 +1,42 @@
+/* element selector */
+h1 {
+  color: palegreen 
+}
+
+/* class selector */
+.underline {
+  text-decoration: underline;
+}
+
+.overline {
+  text-decoration: overline;
+}
+
+/* This overrides because of cascading */
+.line-through {
+  text-decoration: line-through;
+}
+
+#text-align {
+  border:1px solid darkolivegreen; 
+  opacity:0.5
+}
+
+.text-align {
+  border:1px solid darkcyan !important; 
+  opacity:0.5
+}
+
+#text-align div {
+  color: darkcyan;
+}
+
+[href="www.google.ca"] {
+  text-decoration: line-through;
+}
+
+/* select <p> within a <div> with a class special */
+div.special p { }
+
+/* select <li> within a <ul> with a class special */
+ul.special li { }

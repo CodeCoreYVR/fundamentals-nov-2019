@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Animation</title>
+  <style>
+    @keyframes switchColor{
+      from {
+        background: red;
+        width: 200px;
+      }
+      to {
+        background: yellow;
+        width: 400px;
+      }
+    }
+
+    #box {
+      width: 200px;
+      height: 200px;
+      background: fuchsia;
+      animation-name: switchColor;
+      animation-duration: 5s;
+      animation-iteration-count: infinite;
+      animation-direction: alternate-reverse;
+    }
+
+  </style>
+</head>
+<body>
+  <div id="box"></div>
+</body>
+</html>

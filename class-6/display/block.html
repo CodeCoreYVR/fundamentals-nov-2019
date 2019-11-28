@@ -1,23 +1,33 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <title>Block</title>
-</head>
-<body>
-  <!-- 
-    Paragraphs by default ar set to display: block. <p> will always start on a new line.
-   -->
-  <p>
-    Lorem ipsum dolor sit amet consectetur adipisicing elit. <a>THIS IS A LINK</a>Dignissimos ipsa debitis temporibus est eligendi? Perspiciatis!
-  </p>
-  <p>
-    Lorem ipsum dolor sit amet consectetur adipisicing elit. Dignissimos ipsa debitis temporibus est eligendi? Perspiciatis!
-  </p>
-  <p>
-    Lorem ipsum dolor sit amet consectetur adipisicing elit. Dignissimos ipsa debitis temporibus est eligendi? Perspiciatis!
-  </p>
-</body>
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Block</title>
+    <style>
+      a {
+        /* height, top and bottom margins don't affect inline elements */
+        margin: 15px;
+        height: 5000px;
+
+        /* default for anchor tags: */
+        /* display: inline; */
+      }
+    </style>
+  </head>
+  <body>
+    <!-- 
+      Paragraphs by default ar set to display: block. <p> will always start on a new line.
+    -->
+    <p>
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. <a>THIS IS AN INLINE LINK</a>Dignissimos ipsa debitis temporibus est eligendi? Perspiciatis!
+    </p>
+    <p>
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Dignissimos ipsa debitis temporibus est eligendi? Perspiciatis!
+    </p>
+    <p>
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Dignissimos ipsa debitis temporibus est eligendi? Perspiciatis!
+    </p>
+  </body>
 </html>

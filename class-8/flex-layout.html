@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Flex Layout</title>
+  <style>
+    .box {
+      background: forestgreen;
+      color: white;
+      margin: 1%;
+    }
+    .header {
+      display: flex;
+      justify-content: space-between;
+    }
+    .logo {
+      width: 15%;
+      height: 5vh;
+    }
+    .nav {
+      height: 5vh;
+      width: 40%;
+    }
+    .main {
+      height: 40vh;
+    }
+    .footer {
+      display: flex;
+      justify-content: space-between;
+    }
+    .large, .small {
+      height: 15vh;
+    }
+    .large {
+      width: 60%;
+    }
+    .small {
+      width: 15%;
+    }
+  </style>
+</head>
+<body>
+    <div class="header">
+        <div class="logo box">Logo</div>
+        <div class="nav box">Nav Menu</div>
+    </div>
+    <div class="main box">Main Box</div>
+    <div class="footer">
+      <div class="large box">Large Box</div>
+      <div class="small box">Small Box</div>
+      <div class="small box">Small Box</div>
+    </div>
+    <div class="footer">
+      <div class="large box">Large Box</div>
+      <div class="small box">Small Box</div>
+      <div class="small box">Small Box</div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Float Layout</title>
+  <style>
+    * {
+      color: white;
+    }
+    body {
+      margin: 0;
+    }
+    h1 {
+      margin: 0;
+    }
+    header {
+      background: firebrick;
+      height: 10vh;
+      width: 100%
+    }
+    footer {
+      background: firebrick;
+      height: 10vh;
+      width: 100%;
+      position: fixed;
+      bottom: 0;
+    }
+    .banner {
+      width: 95%;
+      height: 15vh;
+      background:dodgerblue;
+      margin: auto;
+    }
+    .content {
+      background:dodgerblue;
+      width: 60%;
+      margin: 2.5%;
+      margin-right: 1.25%;
+      float: left;
+      height: 50vh;
+    }
+    .sidebar {
+      background:dodgerblue;
+      margin: 2.5%;
+      margin-left: 1.25%;
+      width: 32.5%;
+      float: left;
+      height: 50vh;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Header</h1>
+  </header>
+
+  <div class="banner">
+    <h1>Banner</h1>
+  </div>
+  <div class="content">
+    <h1>Content</h1>
+  </div>
+  <div class="sidebar">
+    <h1>Sidebar</h1>
+  </div>
+  <footer>
+    <h1>Footer</h1>
+  </footer>
+</body>
+</html>
